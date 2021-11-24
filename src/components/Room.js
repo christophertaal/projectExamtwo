@@ -13,11 +13,11 @@ const Room = ({room}) => {
             <div className="img-container">
                 <img src={apiUrl + images[0].formats.large.url|| defaultImg} alt="single room"/>
                 <div className="price-top">
-                    <h6>${price}</h6>
-                    <p>per night</p>
+                    <h6>{price}$</h6>
+                    <p>price pr night</p>
                 </div>
                 <Link to={`/rooms/${slug}`} className="btn-primary room-link">
-                    Features
+                    Featuring
                 </Link>
             </div>
             <p className="room-info">{name}</p>

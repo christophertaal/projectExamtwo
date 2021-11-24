@@ -8,22 +8,22 @@ class Services extends Component {
             {
                 icon:<FaCocktail/>,
                 title:"Free cocktails",
-                info:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                info:"It is best to take a moment before ending the day with your favourite cocktails."
             },
             {
                 icon:<FaHiking/>,
                 title:"Free hiking",
-                info:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                info:"We have team that is well-expirience in your sports. We take advantage of our beautiful mountain that is known in the area."
             },
             {
                 icon:<FaShuttleVan/>,
                 title:"Free shuttle van",
-                info:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                info:"We cater your transport during happy hours. We offer free transport from our hotel to the closest train atation. Our shuttle is environment friendly."
             },
             {
                 icon:<FaBeer/>,
                 title:"Free beers",
-                info:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                info:"We make our own beers on the hotel. This is one of the many reason that we are proud of. We welcome our guest that loves beer to take advantage of our free taste during our happy hours at the hotel."
             }
         ]
     }
