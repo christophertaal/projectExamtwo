@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 import LoginForm from "../components/LoginForm";
+import Footer from "../components/Footer";
 
 const LoginPage = () => {
     return (
@@ -15,6 +16,7 @@ const LoginPage = () => {
             </Banner>
         </Hero>
         <LoginForm/>
+        <Footer />
         </>
     );
 }

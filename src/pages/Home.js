@@ -4,13 +4,14 @@ import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 import Services from "../components/Services";
 import FeaturedRooms from "../components/FeaturedRooms";
+import Footer from "../components/Footer";
 
 const Home = () => {
     return (
         <>
         <Hero>
             <Banner title="luxurious rooms"
-                subtitle="deluxe rooms starting at $299"
+                subtitle="deluxe rooms starting at 499$"
             >
                 <Link to="/rooms/" className="btn-primary">
                     Our Rooms
@@ -19,6 +20,7 @@ const Home = () => {
         </Hero>
         <Services/>
         <FeaturedRooms />
+        <Footer />
         </>
     );
 }

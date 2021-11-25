@@ -29,23 +29,23 @@ const RoomFilter = ({rooms}) => {
         <section className="filter-container">
             <Title title="search rooms" />
             <form className="filter-form">
-               
+          
                 <div className="form-group">
                     <label htmlFor="type">type of room</label>
                     <select name="type" id="type" value={type} className="form-control" onChange={handleChange}>
                         {types}
                     </select>
                 </div>
-            
+             
                 <div className="form-group">
                     <label htmlFor="capacity">No. of guest</label>
                     <select name="capacity" id="capacity" value={capacity} className="form-control" onChange={handleChange}>
                         {people}
                     </select>
                 </div>
-             
+           
                 <div className="form-group">
-                    <label htmlFor="price">Room Price ${price}</label>
+                    <label htmlFor="price">Room Price {price}$</label>
                     <input type="range" name="price" min={minPrice} max={maxPrice} id="price" value={price} onChange={handleChange} className="form-control"/>
                 </div>
               
@@ -56,7 +56,7 @@ const RoomFilter = ({rooms}) => {
                         <input type="number" name="maxSize" id="size" value={maxSize} onChange={handleChange} className="size-input"/>
                     </div>
                 </div>
-             
+           
                 <div className="form-group">
                     <div className="single-extra"> 
                         <input type="checkbox" name="breakfast" id="breakfast" checked={breakfast} onChange={handleChange}/>
@@ -67,7 +67,7 @@ const RoomFilter = ({rooms}) => {
                         <label htmlFor="pets">Pets</label>
                     </div>
                 </div>
-           
+
             </form>
         </section>
     );

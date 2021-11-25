@@ -3,7 +3,8 @@ import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 import ContactForm from "../components/contactForm";
-
+import Footer
+ from "../components/Footer";
 const Enquiry = () => {
     return (
         <>
@@ -15,6 +16,7 @@ const Enquiry = () => {
             </Banner>
         </Hero>
         <ContactForm/>
+        <Footer />
         </>
     );
 }

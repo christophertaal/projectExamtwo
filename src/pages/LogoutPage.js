@@ -3,7 +3,7 @@ import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 import Logout from "../components/Logout";
-
+import Footer from "../components/Footer";
 const LogoutPage = () => {
     return (
         <>
@@ -15,6 +15,7 @@ const LogoutPage = () => {
             </Banner>
         </Hero>
         <Logout/>
+        <Footer />
         </>
     );
 }

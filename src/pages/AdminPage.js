@@ -3,7 +3,7 @@ import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 import Admin from "../components/Admin";
-// import { Redirect } from "react-router";
+import Footer from "../components/Footer";
 
 class AdminPage extends React.Component{
 
@@ -20,7 +20,7 @@ class AdminPage extends React.Component{
             </Hero>
             <Admin/>
             <Link to="/logout/">Logout</Link>
-    
+            <Footer />
             </>
         );
     }

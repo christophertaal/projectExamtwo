@@ -14,7 +14,7 @@ class Logout extends React.Component {
         if(token == null) {
             return (
                 <div>
-                    <h1>You are already logout! Please Login Again!</h1>
+                    <h1>You are now logout! Please Login Again!</h1>
                     <Link to="/login/">Login Again</Link>
                 </div>
                 
@@ -22,7 +22,7 @@ class Logout extends React.Component {
         } else {
             return (
                 <div>
-                    <h1>You have been Logout!</h1>
+                    <h1>You are now Logout!</h1>
                     <Link to="/login/">Login Again</Link>
                 </div>
                 
