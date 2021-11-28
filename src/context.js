@@ -22,7 +22,7 @@ class RoomProvider extends Component {
 
     componentDidMount(){
 
-        const getData = axios.get('http://localhost:1337/bookings').then(res => {
+        const getData = axios.get('https://projectexam2021-strapi.herokuapp.com/bookings').then(res => {
 
             let rooms = res.data
             let featuredRooms = rooms.filter(room => room.featured===true)
