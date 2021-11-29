@@ -1,21 +1,23 @@
 import React from "react";
 import axios from "axios";
 
-class ListOfEnquiry extends React.Component{
+class ContactInfoPage extends React.Component{
     constructor(props) {
         super(props) 
 
         this.state = {
             email:[],
             name:[],
-            message:[]
+            message:[],
+            telephone:[],
+            address:[]
         }
     }
 
     componentDidMount(){
-        axios.get('http://localhost:1337/enquiries').then(res => {
+        axios.get('http://localhost:1337/contacts').then(res => {
             res.data.map(r => {
-                this.setState({email:[...this.state.email, r.email], name:[...this.state.name, r.name], message:[...this.state.message, r.message]})
+                this.setState({telephone:[...this.state.telephone, r.telephone], address:[...this.state.address, r.address], email:[...this.state.email, r.email], name:[...this.state.name, r.name], message:[...this.state.message, r.message]})
             });
         })
     }
@@ -24,6 +26,8 @@ class ListOfEnquiry extends React.Component{
         const emails = this.state.email;
         const names = this.state.name;
         const messages = this.state.message;
+        const address = this.state.address;
+        const telephone = this.state.telephone;
 
         const token = localStorage.getItem('token')
         if(token == null) {
@@ -42,6 +46,12 @@ class ListOfEnquiry extends React.Component{
                             Name
                             </div>
                             <div className="col">
+                            Telephone
+                            </div>
+                            <div className="col">
+                            Address
+                            </div>
+                            <div className="col">
                             Message
                             </div>
                         </div>
@@ -55,6 +65,12 @@ class ListOfEnquiry extends React.Component{
                             <div className="col">
                             {messages.map((e, i) => <h6 className="p-2" key={i}>{e}</h6>)}
                             </div>
+                            <div className="col">
+                            {address.map((e, i) => <h6 className="p-2" key={i}>{e}</h6>)}
+                            </div>
+                            <div className="col">
+                            {telephone.map((e, i) => <h6 className="p-2" key={i}>{e}</h6>)}
+                            </div>
                         </div>
                         </div>
                 </div>
@@ -64,4 +80,4 @@ class ListOfEnquiry extends React.Component{
     }
 }
 
-export default ListOfEnquiry;
+export default ContactInfoPage;

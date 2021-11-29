@@ -45,15 +45,14 @@ class Navbar extends React.Component {
                             <li>
                                 <Link to="/enquiry/">Enquiry</Link>
                             </li>
-                            {/* <li>
-                                <Link to="/enquiry-list/">List of Enquiry</Link>
-                            </li> */}
+                            <li>
+                                <Link to="/contact/">Contact Page</Link>
+                            </li>
+                         
                             <li>
                                 <Link to="/login/">Login</Link>
                             </li>
-                            {/* <li>
-                                <Link to="/logout/">Logout</Link>
-                            </li> */}
+                         
     
                         </ul>
                     </div>
@@ -80,6 +79,9 @@ class Navbar extends React.Component {
                             </li>
                             <li>
                                 <Link to="/enquiry-list/">List of Enquiry</Link>
+                            </li>
+                            <li>
+                                <Link to="/contact-list/">List of Contacts</Link>
                             </li>
                             <li>
                                 <Link to="/logout/"><button id="logout" className="btn btn-danger" onClick={() => window.location.reload()}>Logout</button></Link>

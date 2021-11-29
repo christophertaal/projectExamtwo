@@ -517,6 +517,12 @@ h6 {
 #logout {
   margin-top: -8px;
 }
+/*contact-details"*/
+.contact-details{
+  margin: 0 auto;
+  width: 90%;
+ margin-bottom: 50px;
+}
 
 
 /*Footer*/

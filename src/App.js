@@ -8,10 +8,14 @@ import ListOfEnquiry from './components/ListOfEnquery';
 import LoginPage from './pages/LoginPage';
 import LogoutPage from './pages/LogoutPage';
 import AdminPage from './pages/AdminPage';
+import ContactPage from './pages/ContactPage';
+import ContactInfoPage from './pages/ContactInfoPage';
 
 import Navbar from './components/Navbar';
 
 import { Route, Switch } from 'react-router-dom';
+
+
 
 function App() {
   return <>
@@ -21,6 +25,8 @@ function App() {
       <Route exact path="/rooms/" component={Rooms} />
       <Route exact path="/enquiry/" component={Enquiry} />
       <Route exact path="/enquiry-list/" component={ListOfEnquiry} />
+      <Route exact path="/contact-list/" component={ContactInfoPage} />
+      <Route exact path="/contact/" component={ContactPage} />
       <Route exact path="/login/" component={LoginPage} />
       <Route exact path="/logout/" component={LogoutPage} />
       <Route exact path="/rooms/:slug" component={SingleRoom} />
