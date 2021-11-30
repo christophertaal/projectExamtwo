@@ -13,7 +13,7 @@ class ListOfEnquiry extends React.Component{
     }
 
     componentDidMount(){
-        axios.get('http://localhost:1337/enquiries').then(res => {
+        axios.get('https://project-exam-strapi.herokuapp.com/enquiries').then(res => {
             res.data.map(r => {
                 this.setState({email:[...this.state.email, r.email], name:[...this.state.name, r.name], message:[...this.state.message, r.message]})
             });
