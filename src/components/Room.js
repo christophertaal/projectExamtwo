@@ -7,7 +7,7 @@ const Room = ({room}) => {
 
     const {name, slug, images, price} = room;
     console.log(images)
-    const apiUrl = 'https://project-exam-strapi.herokuapp.com/'
+    const apiUrl = 'https://project-exam-strapi.herokuapp.com/booking'
     return (
         <article className="room">
             <div className="img-container">

@@ -18,7 +18,7 @@ class ContactForm extends React.Component {
 
     submitHandler = (e) => {
         e.preventDefault()
-        axios.post('hhttps://project-exam-strapi.herokuapp.com/enquiries', this.state)
+        axios.post('http://localhost:1337/enquiries', this.state)
         window.location.reload()
 
     }
