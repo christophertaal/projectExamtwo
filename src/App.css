@@ -34,9 +34,8 @@ h2 {
   margin-bottom: 0.75em;
 }
 h3 {
-  font-size: 1.5em;
-  line-height: 1;
-  margin-bottom: 1em;
+  line-height: 1px;
+  margin-bottom: 10px;
 }
 h4 {
   font-size: 1.2em;
@@ -203,6 +202,7 @@ h6 {
   }
   .banner h1 {
     font-size: 3rem;
+ 
   }
 }
 @media screen and (min-width: 992px) {
@@ -361,6 +361,8 @@ h6 {
   font-weight: 700;
   letter-spacing: var(--mainSpacing);
 }
+/*Enquiry*/
+
 
 /* single room*/
 .single-room {
@@ -502,6 +504,19 @@ h6 {
   font-size: 0.8rem;
   margin-left: 0.5rem;
 }
+.NoRoomsMatched{
+  color: red;
+  margin-bottom: 300px;
+}
+.needToLogIn{
+  color: red;
+}
+
+.NoRoomsMatched h3{
+  margin: 0 auto;
+  text-align: center;
+  align-self: center;
+}
 @media screen and (min-width: 776px) {
   .filter-form {
     width: 70vw;
@@ -517,6 +532,7 @@ h6 {
 #logout {
   margin-top: -8px;
 }
+
 /*contact-details"*/
 .contact-details {
   margin: 0 auto;
@@ -534,15 +550,13 @@ h6 {
   margin: 0 auto;
   text-align: center;
 }
+
 /*loginForm*/
 .loginForm {
-  display: flex !important;
-  align-items: center !important;
-}
-.p-5{
-  display: flex !important;
+  width: 65%;
+  display: flex;
   margin: 0 auto;
-  align-items: center;
-  text-align: center;
-  width: 50%;
+  align-self: center;
 }
+
+

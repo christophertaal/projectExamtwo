@@ -1,7 +1,6 @@
 import React from "react";
 import { FaWindows } from "react-icons/fa";
 import { Redirect } from "react-router";
-// import axios from 'axios';
 
 class LoginFormAPI extends React.Component {
     state = {user:'', password:'', loggedIn:false}
@@ -28,7 +27,7 @@ class LoginFormAPI extends React.Component {
         }
         return (
             <div className="loginForm">
-                <form onSubmit={this.onFormSubmit} style={{width:"50%"}}>
+                <form className="loginForm1" onSubmit={this.onFormSubmit}>
                     <div className="mb-3">
                         <label htmlFor="exampleInputEmail1" className="form-label">Username</label>
                         <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value={this.state.user} onChange={e => this.setState({user:e.target.value})}/>

@@ -28,7 +28,7 @@ class ListOfEnquiry extends React.Component{
         const token = localStorage.getItem('token')
         if(token == null) {
             return (
-                <div className="mt-5"><h1>You need to login to see this page</h1></div>
+                <div className="mt-5"><h1 className="needToLogIn">You need to login to see this page</h1></div>
             );
         } else {
             return (
