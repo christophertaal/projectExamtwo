@@ -543,4 +543,6 @@ h6 {
   display: flex !important;
   margin: 0 auto;
   align-items: center;
+  text-align: center;
+  width: 50%;
 }
