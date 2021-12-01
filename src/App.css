@@ -541,4 +541,6 @@ h6 {
 }
 .p-5{
   display: flex !important;
+  margin: 0 auto;
+  align-items: center;
 }
