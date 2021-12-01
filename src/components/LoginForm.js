@@ -7,7 +7,7 @@ class LoginForm extends React.Component {
 
     onSearchSubmit(user, password){
         axios
-        .post('https://project-exam-strapi.herokuapp.com', {  
+        .post('https://project-exam-strapi.herokuapp.com/auth/local', {  
         identifier: user,
         password: password,
         })
