@@ -20,7 +20,7 @@ body {
   padding-top: 66px;
   color: var(--mainBlack);
   background: var(--mainWhite);
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.4;
 }
 
@@ -90,7 +90,7 @@ h6 {
   letter-spacing: var(--mainSpacing);
 }
 
-  /*  Navbar */
+/*  Navbar */
 .navbar {
   position: fixed;
   top: 0;
@@ -171,7 +171,7 @@ h6 {
 }
 .roomsHero {
   background-image: url("./images/room-2.jpeg");
-  min-height: 60vh;/*60% desktop screen*/
+  min-height: 60vh; /*60% desktop screen*/
 }
 
 /* Banner */
@@ -262,7 +262,7 @@ h6 {
 }
 @media screen and (min-width: 992px) {
   .services-center {
-    width: 95vw;/*95% desktop screen*/
+    width: 95vw; /*95% desktop screen*/
     max-width: 1170px;
   }
 }
@@ -288,13 +288,13 @@ h6 {
 
 @media screen and (min-width: 776px) {
   .featured-rooms-center {
-    width: 90vw;/*90% desktop screen*/
+    width: 90vw; /*90% desktop screen*/
     grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   }
 }
 @media screen and (min-width: 992px) {
   .featured-rooms-center {
-    width: 95vw;/*95% desktop screen*/
+    width: 95vw; /*95% desktop screen*/
     max-width: 1170px;
   }
 }
@@ -451,7 +451,7 @@ h6 {
 
 @media screen and (min-width: 776px) {
   .roomslist-center {
-    width: 90vw;/*90% desktop screen*/
+    width: 90vw; /*90% desktop screen*/
   }
 }
 
@@ -518,20 +518,24 @@ h6 {
   margin-top: -8px;
 }
 /*contact-details"*/
-.contact-details{
+.contact-details {
   margin: 0 auto;
   width: 90%;
- margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
-
 /*Footer*/
-.foot{
+.foot {
   width: 100%;
   background-color: #222;
 }
-.foot p{
+.foot p {
   color: white;
   margin: 0 auto;
   text-align: center;
+}
+/*loginForm*/
+.loginForm {
+  display: flex !important;
+  align-items: center !important;
 }

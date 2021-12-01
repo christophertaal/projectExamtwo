@@ -27,8 +27,8 @@ class LoginFormAPI extends React.Component {
             return <Redirect  to="/"/>
         }
         return (
-            <div>
-                <form onSubmit={this.onFormSubmit} style={{width:"75%"}}>
+            <div className="loginForm">
+                <form onSubmit={this.onFormSubmit} style={{width:"50%"}}>
                     <div className="mb-3">
                         <label htmlFor="exampleInputEmail1" className="form-label">Username</label>
                         <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value={this.state.user} onChange={e => this.setState({user:e.target.value})}/>
