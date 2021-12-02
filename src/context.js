@@ -22,7 +22,7 @@ class RoomProvider extends Component {
 
     componentDidMount(){
 
-        const getData = axios.get('https://project-exam-strapi.herokuapp.com/bookings').then(res => { 
+        const getData = axios.get('https://floating-dusk-25106.herokuapp.com/bookings').then(res => { 
             let rooms = res.data
             let featuredRooms = rooms.filter(room => room.featured===true)
             let maxPrice = Math.max(...rooms.map(item=>

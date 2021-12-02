@@ -32,7 +32,7 @@ class SingleRoom extends React.Component {
             </div>
         }
         const {name, description, capacity, size, price, extras, breakfast, pets, images} = room
-        const apiUrl = 'https://project-exam-strapi.herokuapp.com';
+        const apiUrl = 'https://floating-dusk-25106.herokuapp.com';
         return (
             <>
             <StyledHero img={apiUrl + images[0].formats.large.url}>

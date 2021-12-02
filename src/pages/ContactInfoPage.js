@@ -15,7 +15,7 @@ class ContactInfoPage extends React.Component{
     }
 
     componentDidMount(){
-        axios.get('https://project-exam-strapi.herokuapp.com/contacts').then(res => {
+        axios.get('https://floating-dusk-25106.herokuapp.com/contacts').then(res => {
             res.data.map(r => {
                 this.setState({telephone:[...this.state.telephone, r.telephone], address:[...this.state.address, r.address], email:[...this.state.email, r.email], name:[...this.state.name, r.name], message:[...this.state.message, r.message]})
             });
