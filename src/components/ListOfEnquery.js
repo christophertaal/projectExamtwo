@@ -13,7 +13,7 @@ class ListOfEnquiry extends React.Component{
     }
 
     componentDidMount(){
-        axios.get('ttps://floating-dusk-25106.herokuapp.com/enquiries').then(res => {
+        axios.get('https://floating-dusk-25106.herokuapp.com/enquiries').then(res => {
             res.data.map(r => {
                 this.setState({email:[...this.state.email, r.email], name:[...this.state.name, r.name], message:[...this.state.message, r.message]})
             });
