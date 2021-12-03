@@ -7,7 +7,7 @@ const Room = ({room}) => {
 
     const {name, slug, images, price} = room;
     console.log(images)
-    const apiUrl = 'https://floating-dusk-25106.herokuapp.com';
+    const apiUrl = 'https://res.cloudinary.com/hrfvphqqa/image/upload/v1638493073/large_room_9_6bc8b7a2cc.jpg';
     return (
         <article className="room">
             <div className="img-container">
