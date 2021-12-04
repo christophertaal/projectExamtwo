@@ -58,11 +58,12 @@ class ContactInfoPage extends React.Component{
                             {names.map((e, i) => <h6 className="p-2" key={i}>{e}</h6>)}
                             </div>
                             <div className="col">
-                            {messages.map((e, i) => <h6 className="p-2" key={i}>{e}</h6>)}
-                            </div>
-                            <div className="col">
                             {number.map((e, i) => <h6 className="p-2" key={i}>{e}</h6>)}
                             </div>
+                            <div className="col">
+                            {messages.map((e, i) => <h6 className="p-2" key={i}>{e}</h6>)}
+                            </div>
+                          
                         </div>
                         </div>
                 </div>
