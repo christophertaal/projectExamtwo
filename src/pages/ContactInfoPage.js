@@ -9,15 +9,14 @@ class ContactInfoPage extends React.Component{
             email:[],
             name:[],
             message:[],
-            telephone:[],
-            address:[]
+            number:[],
         }
     }
 
     componentDidMount(){
         axios.get('https://floating-dusk-25106.herokuapp.com/contacts').then(res => {
             res.data.map(r => {
-                this.setState({telephone:[...this.state.telephone, r.telephone], address:[...this.state.address, r.address], email:[...this.state.email, r.email], name:[...this.state.name, r.name], message:[...this.state.message, r.message]})
+                this.setState({number:[...this.state.number, r.number], email:[...this.state.email, r.email], name:[...this.state.name, r.name], message:[...this.state.message, r.message]})
             });
         })
     }
@@ -26,8 +25,7 @@ class ContactInfoPage extends React.Component{
         const emails = this.state.email;
         const names = this.state.name;
         const messages = this.state.message;
-        const address = this.state.address;
-        const telephone = this.state.telephone;
+        const number = this.state.number;
 
         const token = localStorage.getItem('token')
         if(token == null) {
@@ -49,9 +47,6 @@ class ContactInfoPage extends React.Component{
                             Telephone
                             </div>
                             <div className="col">
-                            Address
-                            </div>
-                            <div className="col">
                             Message
                             </div>
                         </div>
@@ -66,10 +61,7 @@ class ContactInfoPage extends React.Component{
                             {messages.map((e, i) => <h6 className="p-2" key={i}>{e}</h6>)}
                             </div>
                             <div className="col">
-                            {address.map((e, i) => <h6 className="p-2" key={i}>{e}</h6>)}
-                            </div>
-                            <div className="col">
-                            {telephone.map((e, i) => <h6 className="p-2" key={i}>{e}</h6>)}
+                            {number.map((e, i) => <h6 className="p-2" key={i}>{e}</h6>)}
                             </div>
                         </div>
                         </div>

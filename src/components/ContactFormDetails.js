@@ -9,8 +9,7 @@ class ContactFormDetails extends React.Component {
             email:'',
             name:'',
             message:'',
-            address:'',
-            telephone:0
+            number:0
         }
     }
 
@@ -26,7 +25,7 @@ class ContactFormDetails extends React.Component {
     }
 
     render(){
-        const {email, name, message,telephone,address} = this.state;
+        const {email, name, message,number} = this.state;
         return (
 
             <div className="p-5">
@@ -39,11 +38,8 @@ class ContactFormDetails extends React.Component {
                     <label htmlFor="exampleFormControlTextarea1" className="form-label">Name</label>
                     <input name="name" type="text" className="form-control" id="exampleFormControlInput2"placeholder="type your name here" value={name} onChange={this.changeHandler}/>
 
-                    <label htmlFor="exampleFormControlTextarea1" className="form-label">Address</label>
-                    <input name="address" type="text" className="form-control" id="exampleFormControlInput2"placeholder="type your address here" value={address} onChange={this.changeHandler}/>
-
                     <label htmlFor="exampleFormControlTextarea1" className="form-label">Telephone</label>
-                    <input name="telephone" type="number" className="form-control" id="exampleFormControlInput2"placeholder="type your telephone here" value={telephone} onChange={this.changeHandler}/>
+                    <input name="number" type="number" className="form-control" id="exampleFormControlInput2"placeholder="type your telephone here" value={number} onChange={this.changeHandler}/>
 
                     <label htmlFor="exampleFormControlTextarea1" className="form-label">Message</label>
                     <textarea name="message" className="form-control" id="exampleFormControlTextarea1" placeholder="your message..."value={message} rows="3" onChange={this.changeHandler}></textarea>
