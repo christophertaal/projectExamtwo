@@ -45,7 +45,7 @@ class SingleRoom extends React.Component {
             <section className="single-room">
                 <div className="single-room-images">
                     {images.map((item, index) => {
-                        return <img key={index} src={apiUrl+item.formats.large.url} alt={name} />
+                        return <img key={index} src={item.formats.large.url} alt={name} />
                     })}
                 </div>
                 <div className="single-room-info">
