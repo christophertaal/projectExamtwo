@@ -35,7 +35,7 @@ class SingleRoom extends React.Component {
         const apiUrl = 'https://floating-dusk-25106.herokuapp.com';
         return (
             <>
-            <StyledHero img={apiUrl + images[0].formats.large.url}>
+            <StyledHero img={images[0].formats.large.url}>
                 <Banner title={`${name} room`}>
                     <Link to="/rooms" className="btn-primary">
                         back to rooms
