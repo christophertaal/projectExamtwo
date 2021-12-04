@@ -18,7 +18,7 @@ class ContactForm extends React.Component {
 
     submitHandler = (e) => {
         e.preventDefault()
-        axios.post('hhttps://floating-dusk-25106.herokuapp.com/enquiries', this.state)
+        axios.post('https://floating-dusk-25106.herokuapp.com/enquiries', this.state)
         window.location.reload()
 
     }
